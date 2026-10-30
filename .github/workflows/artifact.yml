@@ -29,6 +29,9 @@ jobs:
         with:
          name: hello-artifact
 
+      - name: Create directory
+        run: mkdir ./artifacts/
+
       - name: Move file
         run: mv hello.txt ./artifacts/
 
