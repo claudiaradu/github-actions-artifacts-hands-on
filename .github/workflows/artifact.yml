@@ -28,11 +28,8 @@ jobs:
         uses: actions/download-artifact@v8
         with:
          name: hello-artifact
-         run: |
-            mkdir ./artifacts/
-            mv hello.txt ./artifacts/
-
-
+         path: ./artifacts/
+         
       - name: Display content of the text file
         run: cat ./artifacts/hello.txt
 
